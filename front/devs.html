@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="icon" href="./assets/img/icons/+P.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Devs</title>
+</head>
+<body id="body-devs">
+
+    <header class="header">
+
+        <div class="navbar navbar-expand-lg nav-tabs pb-0">
+            <div class="col-12 container-fluid justify-content-center">
+
+                <ul id="nav-home-btns" class="nav m-0 p-0 col-12">
+                    <div class="nav col-2 m-0 p-0 container-fluid justify-content-start align-items-end">
+                        <li class="nav-item">
+                            <a href="#" aria-label="Sigueme en mi Instagram"><img class="iconos p-2 pb-2 nav-link" src="./assets/img/icons/ig.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" aria-label="Unete a mi canal de youtube y diviertete con mis videos"><img class="iconos p-2 pb-2 nav-link" src="./assets/img/icons/yt.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/DEV-AusA?tab=repositories" target="_blank" aria-label="Deleitate con mis proyectos"><img class="iconos p-2 pb-2 nav-link" src="./assets/img/icons/git.png" alt=""></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a href="#" aria-label="Visita mi perfil en Linkedin"><img class="iconos p-2 pb-2 nav-link" src="./assets/img/icons/lin.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" aria-label="Comunicate conmigo y mandame un mensaje por Whatsapp"><img class="iconos p-2 pb-2 nav-link" src="./assets/img/icons/whats.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/DEV-AusA?tab=repositories" target="_blank" aria-label="Riete conmigo compartiendo experiencias en Tiktok"><img class="iconos p-2 pb-2 nav-link" src="./assets/img/icons/tik-tok.png" alt=""></a>
+                        </li>
+                    </div>
+                    
+                    <div class="nav col-1 logo-play justify-content-end">
+                        <a href="./index.html"><img src="./assets/img/icons/+PLAY.png" alt=""></a>
+                    </div>
+                    <div class="nav col  justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-white p-2 fs-5" href="./index.html">Principal</a>
+                        </li>
+                    </div> 
+                    <div class="nav col-1 justify-content-end d-flex">
+                        <li class="nav-item">
+                          <a class="nav-link text-decoration-none text-white p-2 pb-3 boton-home-ext" href="./aboutme.html">Sobre mi</a>
+                        </li>   
+                        <li>
+                            <a class="nav-link text-decoration-none text-white p-2 pb-3 boton-home-ext" href="#">Devs</a>
+                        </li>
+                    </div>     
+                </ul>
+
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container my-4">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label for="form-title" class="form-label">Titulo</label>
+                  <input type="text" class="form-control" id="form-title" required>
+                  <div class="invalid-feedback">
+                    Por favor ingrese un nombre valido.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="form-language" class="form-label">Idioma original</label>
+                    <select class="form-select" id="form-language" required>
+                      <option selected disabled value="">Elige una opcion</option>
+                      <option>English</option>
+                      <option>Spanish</option>
+                      <option>Spanish LATAM</option>
+                      <option>French</option>
+                      <option>Chinese</option>
+                      <option>Russian</option>
+                      <option>Japanese</option>
+                      <option>Korean</option>
+                      <option>Other</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Por favor seleccione un idioma válido.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="form-adult" class="form-label">¿Es explícita para adultos?</label>
+                  <select class="form-select" id="form-adult" required>
+                    <option selected disabled value="">Elige una opcion</option>
+                    <option>Si</option>
+                    <option>No</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor seleccione una opcion válida.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="form-genre1" class="form-label d-flex d-inline-block">Generos</label>
+                  <button class="btn btn-primary m-2 ms-0 mt-0" id="btn-add-genre-form" type="button"> Agregar género</button>
+
+                  <div class="colecc-genres row" id="colecc-genres">                    
+                    <div class="col-2 py-2">
+                      <div class="col-md-12">
+                        <div class="genres">
+                            <select class="form-select me-2 col-3" id="form-genre1" required>
+                              <option selected disabled value="">Elige una género</option>
+                              <option>Action</option>
+                              <option>Adventure</option>
+                              <option>Animation</option>
+                              <option>Comedy</option>
+                              <option>Crime</option>
+                              <option>Documentary</option>
+                              <option>Drama</option>
+                              <option>Family</option>
+                              <option>Fantasy</option>
+                              <option>History</option>
+                              <option>Horror</option>
+                              <option>Music</option>
+                              <option>Mystery</option>
+                              <option>Romance</option>
+                              <option>Science Fiction</option>
+                              <option>TV Movie</option>
+                              <option>Thriller</option>
+                              <option>War</option>
+                              <option>Western</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Por favor selecciona un género.
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="form-overview" class="form-label">Descripcion</label>
+                  <textarea class="form-control" aria-label="With textarea" id="form-overview" required></textarea>
+                  <div class="invalid-feedback">
+                    Por favor ingrese una descripcion.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="form-release-date" class="form-label">Fecha de lanzamiento</label>
+                    <input type="text" class="form-control" id="form-release-date" value="" required>
+                    <div class="form-text" id="basic-addon4">Por ejemplo: 2024-01-26</div>
+                    <div class="invalid-feedback">
+                      Por favor ingrese una fecha válida.
+                    </div>
+                </div>
+                <div class="col-md-2">
+
+                  <label for="form-duration-movie" class="form-label">Duración</label>                  
+                  <div class="row">
+                    <div class="col px-1">
+                      <select class="form-select me-2 col-3" id="form-duration-movie" required>
+                        <option selected disabled value="">H</option>
+                        <option>1h</option>
+                        <option>2h</option>
+                        <option>3h</option>
+                        <option>4h</option>
+                        <option>5h</option>
+                        <option>6h</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Elige la hora.
+                      </div>
+                    </div>
+                    <div class="col px-1">
+                      <select class="form-select me-2 col-3" id="form-duration-movie-min" required>
+                        <option selected disabled value="">m</option>
+                        <option>0m</option>
+                        <option>5m</option>
+                        <option>10m</option>
+                        <option>15m</option>
+                        <option>20m</option>
+                        <option>25m</option>
+                        <option>30m</option>
+                        <option>35m</option>
+                        <option>40m</option>
+                        <option>45m</option>
+                        <option>50m</option>
+                        <option>55m</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Elige los min.
+                      </div>
+                    </div>                  
+                  </div>  
+
+                </div>
+                <div class="col-md-2">
+                    <label for="form-vote-average" class="form-label">Puntuacion de Usuarios</label>
+                    <input type="number" step="any" class="form-control" id="form-vote-average" value="" required>
+                    <div class="form-text" id="basic-addon4">Cualquier numero del 1 al 10 por ejm: 7.6</div>
+                    <div class="invalid-feedback">
+                      Por favor ingrese un numero correcto.
+                    </div>
+                </div>
+                  <div class="col-md-8">
+                    <label for="form-director" class="form-label">Director</label>
+                    <input type="text" class="form-control" id="form-director" value="" required>
+                    <div class="invalid-feedback">
+                      Por favor ingrese un nombre correcto.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="form-post-card" class="form-label">URL de la imagen poster en la DB</label>
+                    <div class="input-group">
+                      <!-- <span class="input-group-text" id="basic-addon3">https://masplay.com/movies/img</span> -->
+                      <input type="text" class="form-control" id="form-post-card" aria-describedby="basic-addon3 basic-addon4" required>
+                      <div class="invalid-feedback">
+                        Por favor ingrese una URL correcta.
+                      </div>
+                    </div>
+                    <div class="form-text" id="basic-addon4">Por ejemplo: /abcd12345abcd.jpg</div>
+                  </div>
+
+                  <!-- <div class="mb-3">
+                    <label for="form-post-card-bg" class="form-label">URL de la Imagen poster-bg card en la DB</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon3">https://masplay.com/movies/img</span>
+                      <input type="text" class="form-control" id="form-post-card-bg" aria-describedby="basic-addon3 basic-addon4" required>
+                      <div class="invalid-feedback">
+                        Por favor ingrese una URL correcta.
+                      </div>
+                    </div>
+                    <div class="form-text" id="basic-addon4">Por ejemplo: /abcd12345abcd.jpg</div>
+                  </div> -->
+
+                  <div class="col-md-4">
+                    <label for="form-admin-name" class="form-label">Nombre de Admin-Dev</label>
+                    <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="form-admin-name" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Por favor ingrese un nombre válido.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="form-admin-name-tk" class="form-label">Token de Admin-Dev</label>
+                  <input type="text" class="form-control" id="form-admin-name-tk" required>
+                  <div class="invalid-feedback">
+                    Por favor ingrese un Token válido.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Acepto los terminos y condiciones al momento de cargar una nueva Movie en la DB de +Play.
+                    </label>
+                    <div class="invalid-feedback">
+                      Necesitas aceptar lo terminos y condiciones.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <button class="btn btn-primary" id="send-button-form" type="submit">Carga nueva Pelicula</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-primary" id="clean-button-form" type="button">Limpiar todos los campos</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+      <img src="./assets/img/icons/logo-ausa.png" alt="">
+      <h5>© Desarrollado por AusA</h5>
+      <button type="button"><a href="https://github.com/DEV-AusA?tab=repositories" target="_blank">Mi GitHub</a></button>
+    </footer> 
+
+    <script src="./public/bundle.js"></script>
+
+</body>
+</html>
